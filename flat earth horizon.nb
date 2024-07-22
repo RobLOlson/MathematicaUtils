@@ -1,0 +1,1062 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     42128,       1052]
+NotebookOptionsPosition[     40323,        987]
+NotebookOutlinePosition[     40697,       1003]
+CellTagsIndexPosition[     40654,       1000]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Circle", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0"}], "}"}], ",", "21000000", ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           FractionBox["Pi", "2"], "+", 
+           RowBox[{"ArcTan", "[", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"\[Sqrt]", 
+               RowBox[{"(", 
+                RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], "/",
+              "21000000"}], "]"}]}], ",", 
+          RowBox[{
+           FractionBox["Pi", "2"], "-", 
+           RowBox[{"2", 
+            RowBox[{"ArcTan", "[", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"\[Sqrt]", 
+                RowBox[{"(", 
+                 RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], 
+              "/", "21000000"}], "]"}]}]}]}], "}"}]}], "]"}], ",", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "21000000"}], "}"}]}], "}"}], "]"}], ",", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             RowBox[{
+              FractionBox["Pi", "2"], "-", 
+              RowBox[{"ArcTan", "[", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"\[Sqrt]", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], 
+                "/", "21000000"}], "]"}]}], "]"}], "*", "21000000"}], ",", 
+           RowBox[{
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              FractionBox["Pi", "2"], "-", 
+              RowBox[{"ArcTan", "[", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"\[Sqrt]", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], 
+                "/", "21000000"}], "]"}]}], "]"}], "*", "21000000"}]}], 
+          "}"}]}], "}"}], "]"}], ",", " ", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             RowBox[{
+              FractionBox["Pi", "2"], "-", 
+              RowBox[{"ArcTan", "[", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"\[Sqrt]", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], 
+                "/", "21000000"}], "]"}]}], "]"}], "*", "21000000"}], ",", 
+           RowBox[{
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              FractionBox["Pi", "2"], "-", 
+              RowBox[{"ArcTan", "[", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"\[Sqrt]", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], 
+                "/", "21000000"}], "]"}]}], "]"}], "*", "21000000"}]}], "}"}],
+          ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             RowBox[{
+              FractionBox["Pi", "2"], "-", 
+              RowBox[{"ArcTan", "[", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"\[Sqrt]", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], 
+                "/", "21000000"}], "]"}]}], "]"}], "*", 
+            RowBox[{"(", 
+             RowBox[{"21000000", "+", "h"}], ")"}]}], ",", 
+           RowBox[{
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              FractionBox["Pi", "2"], "-", 
+              RowBox[{"ArcTan", "[", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"\[Sqrt]", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], 
+                "/", "21000000"}], "]"}]}], "]"}], "*", 
+            RowBox[{"(", 
+             RowBox[{"21000000", "+", "h"}], ")"}]}]}], "}"}]}], "}"}], "]"}],
+       ",", 
+      RowBox[{"Line", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "21000000"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Cos", "[", 
+             RowBox[{
+              FractionBox["Pi", "2"], "-", 
+              RowBox[{"ArcTan", "[", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"\[Sqrt]", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], 
+                "/", "21000000"}], "]"}]}], "]"}], "*", 
+            RowBox[{"(", 
+             RowBox[{"21000000", "+", "h"}], ")"}]}], ",", 
+           RowBox[{
+            RowBox[{"Sin", "[", 
+             RowBox[{
+              FractionBox["Pi", "2"], "-", 
+              RowBox[{"ArcTan", "[", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"\[Sqrt]", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], 
+                "/", "21000000"}], "]"}]}], "]"}], "*", 
+            RowBox[{"(", 
+             RowBox[{"21000000", "+", "h"}], ")"}]}]}], "}"}]}], "}"}], 
+       "]"}]}], "}"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"h", ",", "0", ",", "500000"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9306233386408997`*^9, 3.9306235383666677`*^9}, {
+   3.930623588928169*^9, 3.930623611129233*^9}, {3.930623722741039*^9, 
+   3.930623873695649*^9}, {3.930623998268999*^9, 3.930624254116636*^9}, {
+   3.9306243248373137`*^9, 3.930624325320834*^9}, {3.9306243913207836`*^9, 
+   3.9306244189497046`*^9}, {3.930624962920988*^9, 3.9306251351823363`*^9}, 
+   3.930627558287377*^9, 3.9306276094793653`*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`h$$ = 116000., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`h$$], 0, 500000}}, Typeset`size$$ = {
+    153., {235., 240.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`h$24551$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`h$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`h$$, $CellContext`h$24551$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics[{
+         Circle[{0, 0}, 21000000, {
+          Pi/2 + ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000], Pi/2 - 2 
+           ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]}], 
+         Line[{{0, 0}, {0, 21000000}}], 
+         Line[{{0, 0}, {
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000, 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000}}], 
+         Line[{{
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000, 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000}, {
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$), 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$)}}], 
+         Line[{{0, 21000000}, {
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$), 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$)}}]}], 
+      "Specifications" :> {{$CellContext`h$$, 0, 500000}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{265., {285., 292.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.9306275500437355`*^9, 3.930627620790329*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`h$$ = 8000., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`h$$], 0, 500000}}, Typeset`size$$ = {
+    967., {5621., 5627.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`h$7805$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`h$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`h$$, $CellContext`h$7805$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics[{
+         Circle[{0, 0}, 21000000, {
+          Pi/2 + ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000], Pi/2 - 2 
+           ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]}], 
+         Line[{{0, 0}, {0, 21000000}}], 
+         Line[{{0, 0}, {
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000, 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000}}], 
+         Line[{{
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000, 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000}, {
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$), 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$)}}], 
+         Line[{{0, 21000000}, {
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$), 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$)}}]}], 
+      "Specifications" :> {{$CellContext`h$$, 0, 500000}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{1022., {5685., 5692.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.9306251476806817`*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`h$$ = 35000, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`h$$], 35000}, 0, 500000}}, Typeset`size$$ = {
+    86., {235., 240.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`h$7864$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`h$$ = 35000}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`h$$, $CellContext`h$7864$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics[{
+         Circle[{0, 0}, 21000000, {
+          Pi/2 + ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000], Pi/2 - 2 
+           ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]}], 
+         Line[{{0, 0}, {0, 21000000}}], 
+         Line[{{0, 0}, {
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000, 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000}}], 
+         Line[{{
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000, 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] 
+            21000000}, {
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$), 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$)}}], 
+         Line[{{0, 21000000}, {
+           Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$), 
+            Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`h$$]/21000000]] (
+             21000000 + $CellContext`h$$)}}]}], 
+      "Specifications" :> {{{$CellContext`h$$, 35000}, 0, 500000}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{265., {285., 292.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.9306251478258424`*^9}]
+}, Open  ]],
+
+Cell[BoxData["Manipulate"], "Input",
+ CellChangeTimes->{{3.9306250414845905`*^9, 3.9306250432833076`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   FractionBox["180", "Pi"], "*", 
+   RowBox[{"ArcTan", "[", 
+    FractionBox[
+     SqrtBox[
+      RowBox[{"2", "*", "21000000", "*", "35000"}]], "21000000"], "]"}]}], "//",
+   "N"}]], "Input",
+ CellChangeTimes->{{3.930623660732887*^9, 3.9306236688539886`*^9}}],
+
+Cell[BoxData["3.3043051801559624`"], "Output",
+ CellChangeTimes->{{3.9306236652024565`*^9, 3.9306236690752726`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ NamespaceBox["LinguisticAssistant",
+  DynamicModuleBox[{Typeset`query$$ = "radius of the Earth in feet", 
+   Typeset`boxes$$ = RowBox[{"UnitConvert", "[", 
+     RowBox[{
+       RowBox[{
+         TemplateBox[{"\"Earth\"", 
+           RowBox[{"Entity", "[", 
+             RowBox[{"\"Planet\"", ",", "\"Earth\""}], "]"}], 
+           "\"Entity[\\\"Planet\\\", \\\"Earth\\\"]\"", "\"planet\""}, 
+          "Entity"], "[", 
+         TemplateBox[{"\"average radius\"", 
+           RowBox[{"EntityProperty", "[", 
+             RowBox[{"\"Planet\"", ",", "\"Radius\""}], "]"}], 
+           "\"EntityProperty[\\\"Planet\\\", \\\"Radius\\\"]\""}, 
+          "EntityProperty"], "]"}], ",", " ", "\"Feet\""}], "]"}], 
+   Typeset`allassumptions$$ = {{
+    "type" -> "MultiClash", "word" -> "", "template" -> 
+     "Assuming ${word1} is referring to ${desc1}. Use \"${word2}\" as \
+${desc2}.", "count" -> "2", 
+     "Values" -> {{
+       "name" -> "Planet", "word" -> "Earth", "desc" -> "a planet", "input" -> 
+        "*MC.radius+of+the+Earth-_*Planet-"}, {
+       "name" -> "Unit", "word" -> "radius of the Earth", "desc" -> "a unit", 
+        "input" -> "*MC.radius+of+the+Earth-_*Unit-"}}}, {
+    "type" -> "Clash", "word" -> "feet", "template" -> 
+     "Assuming \"${word}\" is ${desc1}. Use as ${desc2} instead", "count" -> 
+     "2", "Values" -> {{
+       "name" -> "Unit", "desc" -> "a unit", "input" -> "*C.feet-_*Unit-"}, {
+       "name" -> "Anatomy", "desc" -> "a human anatomical structure", "input" -> 
+        "*C.feet-_*Anatomy-"}}}, {
+    "type" -> "SubCategory", "word" -> "radius", "template" -> 
+     "Assuming ${desc1}. Use ${desc2} instead", "count" -> "3", 
+     "Values" -> {{
+       "name" -> "Radius", "desc" -> "average radius", "input" -> 
+        "*DPClash.PlanetP.radius-_*Radius-"}, {
+       "name" -> "EquatorialRadius", "desc" -> "equatorial radius", "input" -> 
+        "*DPClash.PlanetP.radius-_*EquatorialRadius-"}, {
+       "name" -> "PolarRadius", "desc" -> "polar radius", "input" -> 
+        "*DPClash.PlanetP.radius-_*PolarRadius-"}}}}, 
+   Typeset`assumptions$$ = {}, Typeset`open$$ = {1, 2}, 
+   Typeset`querystate$$ = {
+   "Online" -> True, "Allowed" -> True, "mparse.jsp" -> 
+    0.9499766`7.429257901294255, "Messages" -> {}}}, 
+   DynamicBox[ToBoxes[
+     AlphaIntegration`LinguisticAssistantBoxes["", 4, Automatic, 
+      Dynamic[Typeset`query$$], 
+      Dynamic[Typeset`boxes$$], 
+      Dynamic[Typeset`allassumptions$$], 
+      Dynamic[Typeset`assumptions$$], 
+      Dynamic[Typeset`open$$], 
+      Dynamic[Typeset`querystate$$]], StandardForm],
+    ImageSizeCache->{482., {12., 21.}},
+    TrackedSymbols:>{
+     Typeset`query$$, Typeset`boxes$$, Typeset`allassumptions$$, 
+      Typeset`assumptions$$, Typeset`open$$, Typeset`querystate$$}],
+   DynamicModuleValues:>{},
+   UndoTrackedVariables:>{Typeset`open$$}],
+  BaseStyle->{"Deploy"},
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True]], "Input",
+ CellChangeTimes->{{3.9306235426876893`*^9, 3.930623554210741*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "2.090225973315835500189792`7.503178184368268*^7","\"ft\"","feet",
+   "\"Feet\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.930623376227782*^9, 3.930623445309162*^9}, {
+   3.9306234901118145`*^9, 3.930623515276202*^9}, 3.930623567395679*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"2", "*", 
+  RowBox[{"10", "^", "7"}]}]], "Input",
+ CellChangeTimes->{{3.930623579013496*^9, 3.930623583122136*^9}}],
+
+Cell[BoxData["20000000"], "Output",
+ CellChangeTimes->{3.930623583748048*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", "C", "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.930623697736416*^9, 3.9306237093693357`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["Spherical"], "Input",
+ CellChangeTimes->{{3.9306245185919166`*^9, 3.930624579828683*^9}, {
+  3.9306247726737204`*^9, 3.9306247811916633`*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[SphereBox[{0, 0, 0}, 21000000],
+  ImageSize->{323.4407067216862, 307.2743128575641},
+  ImageSizeRaw->Automatic,
+  ViewPoint->{1.1450174346850428`, -3.101360322477616, 0.7214563219134095},
+  ViewVertical->{0.1745066275165897, -0.3679920394976933, 
+   0.9133067917294354}]], "Output",
+ CellChangeTimes->{{3.9306245497328415`*^9, 3.9306245802702723`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Sphere", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "21000000"}], "]"}], 
+      "}"}], ",", " ", 
+     RowBox[{"ViewVector", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", " ", 
+          RowBox[{"21000000", "+", "x"}]}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Cos", "[", 
+            RowBox[{
+             FractionBox["Pi", "2"], "-", 
+             RowBox[{"ArcTan", "[", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"\[Sqrt]", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "*", "21000000", "*", "x"}], ")"}]}], ")"}], 
+               "/", "21000000"}], "]"}]}], "]"}], "*", "21000000"}], ",", 
+          RowBox[{
+           RowBox[{"Sin", "[", 
+            RowBox[{
+             FractionBox["Pi", "2"], "-", 
+             RowBox[{"ArcTan", "[", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"\[Sqrt]", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "*", "21000000", "*", "x"}], ")"}]}], ")"}], 
+               "/", "21000000"}], "]"}]}], "]"}], "*", "21000000"}], ",", 
+          "0"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"ViewAngle", "\[Rule]", 
+      RowBox[{"120", "*", "Degree"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "10000000"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9306252091314096`*^9, 3.930625253845793*^9}, {
+   3.9306253093259573`*^9, 3.930625354167913*^9}, {3.930625405694162*^9, 
+   3.930625425139414*^9}, {3.930625472095403*^9, 3.930625474215682*^9}, {
+   3.9306255381374345`*^9, 3.9306255594662657`*^9}, {3.9306256747837925`*^9, 
+   3.930625757069451*^9}, {3.9306257977472596`*^9, 3.930625818547152*^9}, 
+   3.930625853589655*^9, {3.9306260076666317`*^9, 3.9306260158255806`*^9}, {
+   3.930626103034976*^9, 3.9306261037530484`*^9}, {3.9306261584299593`*^9, 
+   3.9306261594765596`*^9}, {3.930626189797202*^9, 3.930626222665568*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = 0, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`x$$], 0, 10000000}}, Typeset`size$$ = {
+    396., {195., 201.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`x$10153$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`x$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`x$$, $CellContext`x$10153$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics3D[{
+         Sphere[{0, 0, 0}, 21000000]}, 
+        ViewVector -> {{0, 0, 21000000 + $CellContext`x$$}, {
+          Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`x$$]/21000000]] 
+           21000000, 
+           Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`x$$]/21000000]] 
+           21000000, 0}}, ViewAngle -> 120 Degree], 
+      "Specifications" :> {{$CellContext`x$$, 0, 10000000}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{451., {245., 252.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.930626105195552*^9, 3.9306261598913293`*^9, {3.930626192085889*^9, 
+   3.9306262232426844`*^9}, 3.9306262611578407`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = 0, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`x$$], 0, 10000000}}, Typeset`size$$ = {
+    396., {195., 201.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`x$9912$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`x$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`x$$, $CellContext`x$9912$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics3D[{
+         Sphere[{0, 0, 0}, 21000000]}, 
+        ViewVector -> {{0, 0, 21000000 + $CellContext`x$$}, {
+          Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`x$$]/21000000]] 
+           21000000, 
+           Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`x$$]/21000000]] 
+           21000000, 0}}, ViewAngle -> 110 Degree], 
+      "Specifications" :> {{$CellContext`x$$, 0, 10000000}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{451., {259., 266.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.9306260793413076`*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = -10, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`x$$], -10}, 0, 10000000}}, Typeset`size$$ = {
+    396., {195., 201.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`x$9968$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`x$$ = -10}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`x$$, $CellContext`x$9968$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics3D[{
+         Sphere[{0, 0, 0}, 21000000]}, 
+        ViewVector -> {{0, 0, 21000000 + $CellContext`x$$}, {
+          Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`x$$]/21000000]] 
+           21000000, 
+           Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`x$$]/21000000]] 
+           21000000, 0}}, ViewAngle -> 110 Degree], 
+      "Specifications" :> {{{$CellContext`x$$, -10}, 0, 10000000}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{451., {245., 252.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.930626079458711*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = 50000, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`x$$], 0, 10000000}}, Typeset`size$$ = {
+    670., {332., 338.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`x$9781$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`x$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`x$$, $CellContext`x$9781$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics3D[{
+         Sphere[{0, 0, 0}, 21000000]}, 
+        ViewVector -> {{0, 0, 21000000 + $CellContext`x$$}, {
+          Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`x$$]/21000000]] 
+           21000000, 
+           Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`x$$]/21000000]] 
+           21000000, 0}}, ViewAngle -> 110 Degree], 
+      "Specifications" :> {{$CellContext`x$$, 0, 10000000}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{725., {396., 403.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.930625983900402*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`x$$ = 50000, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`x$$], 50000}, 0, 10000000}}, Typeset`size$$ = {
+    396., {195., 201.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`x$9838$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`x$$ = 50000}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`x$$, $CellContext`x$9838$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics3D[{
+         Sphere[{0, 0, 0}, 21000000]}, 
+        ViewVector -> {{0, 0, 21000000 + $CellContext`x$$}, {
+          Cos[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`x$$]/21000000]] 
+           21000000, 
+           Sin[Pi/2 - ArcTan[Sqrt[2 21000000 $CellContext`x$$]/21000000]] 
+           21000000, 0}}, ViewAngle -> 110 Degree], 
+      "Specifications" :> {{{$CellContext`x$$, 50000}, 0, 10000000}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{451., {245., 252.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.930625983978572*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"circle3D", "[", 
+     RowBox[{
+      RowBox[{"centre_:", " ", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "0"}], "}"}]}], ",", 
+      RowBox[{"radius_:", " ", "1"}], ",", 
+      RowBox[{"normal_:", " ", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], ",", 
+      RowBox[{"angle_:", " ", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", 
+         RowBox[{"2", " ", "Pi"}]}], "}"}]}]}], "]"}], ":=", 
+    RowBox[{
+     RowBox[{"Composition", "[", 
+      RowBox[{"Line", ",", 
+       RowBox[{
+        RowBox[{"Map", "[", 
+         RowBox[{
+          RowBox[{"RotationTransform", "[", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", "normal"}], 
+             "}"}], ",", "centre"}], "]"}], ",", "#"}], "]"}], "&"}], ",", 
+       RowBox[{
+        RowBox[{"Map", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Append", "[", 
+            RowBox[{"#", ",", 
+             RowBox[{"Last", "@", "centre"}]}], "]"}], "&"}], ",", "#"}], 
+         "]"}], "&"}], ",", 
+       RowBox[{
+        RowBox[{"Append", "[", 
+         RowBox[{
+          RowBox[{"DeleteDuplicates", "[", 
+           RowBox[{"Most", "@", "#"}], "]"}], ",", 
+          RowBox[{"Last", "@", "#"}]}], "]"}], "&"}], ",", 
+       RowBox[{
+        RowBox[{"Level", "[", 
+         RowBox[{"#", ",", 
+          RowBox[{"{", 
+           RowBox[{"-", "2"}], "}"}]}], "]"}], "&"}], ",", 
+       RowBox[{
+        RowBox[{"MeshPrimitives", "[", 
+         RowBox[{"#", ",", "1"}], "]"}], "&"}], ",", "DiscretizeRegion", ",", 
+       "If"}], "]"}], "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"First", "@", 
+        RowBox[{"Differences", "@", "angle"}]}], "\[GreaterEqual]", 
+       RowBox[{"2", " ", "Pi"}]}], ",", 
+      RowBox[{"Circle", "[", 
+       RowBox[{
+        RowBox[{"Most", "@", "centre"}], ",", "radius"}], "]"}], ",", 
+      RowBox[{"Circle", "[", 
+       RowBox[{
+        RowBox[{"Most", "@", "centre"}], ",", "radius", ",", "angle"}], 
+       "]"}]}], "]"}]}], "\n"}]}]], "Input",
+ CellChangeTimes->{{3.9306268757763367`*^9, 3.9306268766998625`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Graphics3D", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"Red", ",", "Thick", ",", 
+       RowBox[{"circle3D", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", " ", "1200000"}], 
+        "]"}], ",", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"1200000", ",", "0", ",", "0"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"1200000", ",", "0", ",", "100000"}], "}"}]}], "}"}], 
+        "]"}]}], "}"}], ",", 
+     RowBox[{"ViewVector", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "0", ",", "h"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"1200000", ",", "0", ",", "0"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"ViewAngle", "\[Rule]", 
+      RowBox[{"u", "*", "Degree"}]}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"h", ",", "0", ",", "1000000"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"u", ",", "100"}], "}"}], ",", "0", ",", "150"}], "}"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{
+   RowBox[{"Line", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "10000000"}], ",", "0", ",", "0"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"100000000", ",", "0", ",", "0"}], "}"}]}], "}"}], "]"}], ",", 
+   RowBox[{"ViewVector", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "35000"}], "}"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.9306265776828785`*^9, 3.930626605199231*^9}, {
+   3.930626693846362*^9, 3.9306267956105566`*^9}, {3.9306268836063695`*^9, 
+   3.9306268936036606`*^9}, {3.930626926925992*^9, 3.9306269884462366`*^9}, {
+   3.930627052683175*^9, 3.9306270751729946`*^9}, {3.93062712317179*^9, 
+   3.9306271540149536`*^9}, {3.930627198852067*^9, 3.9306272250097494`*^9}, {
+   3.930627307172301*^9, 3.9306273206165323`*^9}, 3.9306273510563583`*^9, {
+   3.930627426615729*^9, 3.930627450537174*^9}, {3.9306276566998925`*^9, 
+   3.930627752465014*^9}, {3.930627788943242*^9, 3.9306278192664986`*^9}, {
+   3.93062785610375*^9, 3.9306278610640173`*^9}, {3.9306278994650326`*^9, 
+   3.9306278999854255`*^9}, {3.9306279719871526`*^9, 
+   3.9306279892703743`*^9}, {3.930628245830988*^9, 3.9306282804322557`*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`h$$ = 50600., $CellContext`u$$ = 
+    92.80000000000001, Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`h$$], 0, 1000000}, {{
+       Hold[$CellContext`u$$], 100}, 0, 150}}, Typeset`size$$ = {
+    396., {195., 201.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`h$119822$$ = 
+    0, $CellContext`u$119823$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`h$$ = 0, $CellContext`u$$ = 100}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`h$$, $CellContext`h$119822$$, 0], 
+        Hold[$CellContext`u$$, $CellContext`u$119823$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Graphics3D[{Red, Thick, 
+         $CellContext`circle3D[{0, 0, 0}, 1200000], 
+         Line[{{1200000, 0, 0}, {1200000, 0, 100000}}]}, 
+        ViewVector -> {{0, 0, $CellContext`h$$}, {1200000, 0, 0}}, 
+        ViewAngle -> $CellContext`u$$ Degree], 
+      "Specifications" :> {{$CellContext`h$$, 0, 
+         1000000}, {{$CellContext`u$$, 100}, 0, 150}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{451., {288., 295.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.930627835279648*^9, 3.9306278619535985`*^9}, 
+   3.9306279003110523`*^9, 3.9306279897193155`*^9, 3.930628071264799*^9, {
+   3.9306281299449167`*^9, 3.9306281490684967`*^9}, {3.930628246835096*^9, 
+   3.930628280916701*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[Line3DBox[{{-10000000, 0, 0}, {100000000, 0, 0}}],
+  ViewVector->{0, 0, 35000}]], "Output",
+ CellChangeTimes->{{3.930627835279648*^9, 3.9306278619535985`*^9}, 
+   3.9306279003110523`*^9, 3.9306279897193155`*^9, 3.930628071264799*^9, {
+   3.9306281299449167`*^9, 3.9306281490684967`*^9}, {3.930628246835096*^9, 
+   3.9306282809767227`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Cos", "[", 
+   RowBox[{"ArcTan", "[", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"\[Sqrt]", 
+       RowBox[{"(", 
+        RowBox[{"2", "*", "21000000", "*", "h"}], ")"}]}], ")"}], "/", 
+     "21000000"}], "]"}], "]"}], "*", "h"}]], "Input",
+ CellChangeTimes->{{3.9306274894935784`*^9, 3.9306275174194484`*^9}}],
+
+Cell[BoxData[
+ FractionBox["h", 
+  SqrtBox[
+   RowBox[{"1", "+", 
+    FractionBox["h", "10500000"]}]]]], "Output",
+ CellChangeTimes->{{3.930627500737426*^9, 3.930627517687454*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Cos", "[", 
+    RowBox[{
+     FractionBox["Pi", "2"], "-", 
+     RowBox[{"ArcTan", "[", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"\[Sqrt]", 
+         RowBox[{"(", 
+          RowBox[{"2", "*", "21000000", "*", "35000"}], ")"}]}], ")"}], "/", 
+       "21000000"}], "]"}]}], "]"}], "*", "21000000"}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.93062762939373*^9, 3.930627637343973*^9}}],
+
+Cell[BoxData["1.2104198771788934`*^6"], "Output",
+ CellChangeTimes->{
+  3.930627593445264*^9, {3.930627632846521*^9, 3.93062763769096*^9}}]
+}, Open  ]]
+},
+WindowSize->{1153, 768},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>1.1 Inherited,
+FrontEndVersion->"10.1 for Microsoft Windows (64-bit) (March 23, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 6128, 166, 440, "Input"],
+Cell[6711, 190, 2760, 55, 595, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9508, 250, 2738, 55, 11395, InheritFromParent],
+Cell[12249, 307, 2756, 55, 595, "Output"]
+}, Open  ]],
+Cell[15020, 365, 106, 1, 32, "Input"],
+Cell[CellGroupData[{
+Cell[15151, 370, 296, 9, 64, "Input"],
+Cell[15450, 381, 116, 1, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15603, 387, 3043, 62, 51, "Input"],
+Cell[18649, 451, 279, 6, 43, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18965, 462, 139, 3, 32, "Input"],
+Cell[19107, 467, 77, 1, 33, "Output"]
+}, Open  ]],
+Cell[19199, 471, 152, 3, 32, "Input"],
+Cell[CellGroupData[{
+Cell[19376, 478, 156, 2, 32, "Input"],
+Cell[19535, 482, 381, 7, 354, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19953, 494, 2190, 53, 138, "Input"],
+Cell[22146, 549, 1980, 40, 515, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24163, 594, 1876, 38, 543, InheritFromParent],
+Cell[26042, 634, 1894, 38, 515, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27973, 677, 1878, 38, 817, InheritFromParent],
+Cell[29854, 717, 1902, 38, 515, "Output"]
+}, Open  ]],
+Cell[31771, 758, 2266, 65, 133, "Input"],
+Cell[CellGroupData[{
+Cell[34062, 827, 2422, 59, 73, "Input"],
+Cell[36487, 888, 2257, 44, 601, "Output"],
+Cell[38747, 934, 368, 6, 412, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39152, 945, 349, 10, 39, "Input"],
+Cell[39504, 957, 180, 5, 65, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39721, 967, 444, 13, 55, "Input"],
+Cell[40168, 982, 139, 2, 33, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
